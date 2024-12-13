@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #ffcccb;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #ff6347;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #444;
+}
+
+.texto {
+    margin: 40px 0;
+}
+
+.texto p {
+    font-size: 1.5em;
+    color: #444;
+    font-weight: bold;
+}
+
+.fotos {
+    margin: 40px 0;
+}
+
+.foto-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.contador {
+    background-color: #ffebcd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contador p {
+    font-size: 1.5em;
+    color: #555;
+}
+
+#contador {
+    font-weight: bold;
+    color: #ff6347;
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .foto-container {
+        grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas no celular */
+    }
+
+    .foto {
+        width: 180px; /* Reduz o tamanho das fotos para caber melhor em telas pequenas */
+        height: 180px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .texto p {
+        font-size: 1.2em;
+    }
+
+    .contador p {
+        font-size: 1.3em;
+    }
+}
+
+/* Media Query para telas grandes (desktops) */
+@media (min-width: 1200px) {
+    .container {
+        width: 80%; /* Para telas grandes, aumentar o conteúdo */
+    }
+}
